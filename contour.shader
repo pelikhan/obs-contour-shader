@@ -5,7 +5,6 @@ Contour shared ported from MakeCode streamer.
 Adds a contour around transparent pixels, must run after a chroma background removal.
 
 */
-
 uniform float4 edge_color = {0.5, 0.0, 0.5, 1.0};
 uniform int samples<
     string label = "Samples";
@@ -28,6 +27,7 @@ uniform float alpha_threshold<
     float maximum = 0.2;
     float step = .01;
 > = 0.03;
+uniform string Notes = "This shader assume you have already run a background removal filter. It looks for transparent pixel edges and paints them.";
 
 float4 mainImage(VertData v_in) : TARGET
 {
