@@ -9,6 +9,7 @@ Works great to add a contour after a chroma background removal filter.
 
 ## Usage
 
+- Install the [obs-shader-filter](https://obsproject.com/forum/resources/obs-shaderfilter.1736/) plugin in [OBS](https://obsproject.com/)
 - Clone this repository or download `contour.shader`.
 - Add a "User-defined shared" filter to your source.
 - Set `contour.shader` as the `Shader text file`.
